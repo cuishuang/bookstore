@@ -1,0 +1,12 @@
+Name: add.rpc
+ListenOn: 0.0.0.0:8080
+Etcd:
+  Hosts:
+  - 127.0.0.1:2379
+  Key: add.rpc
+
+DataSource: root:Crs930126@@tcp(118.126.97.71:3306)/gozero
+#DataSource: root:123456@@tcp(localhost:3306)/gozero?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai #可以这样指定一些其他信息
+Table: book
+Cache:
+  - Host: localhost:6379
